@@ -31,12 +31,15 @@
 @end
 
 @class MDButton;
+@class MDCalendar;
+
 @interface MDDatePickerDialog : UIControl
 
 @property (nullable, strong, nonatomic) NSDate *selectedDate;
 @property (nonnull, strong, nonatomic) NSDate *minimumDate;
 @property (nullable, strong, nonatomic) NSDate *maximumDate;
-@property(weak, nonatomic) id<MDDatePickerDialogDelegate> delegate;
+@property(nullable, weak, nonatomic) id<MDDatePickerDialogDelegate> delegate;
+@property(nullable, nonatomic) MDCalendar *calendar;
 
 - (void)show;
 - (void)setTitleOk: (nonnull NSString *) okTitle andTitleCancel: (nonnull NSString *) cancelTitle;

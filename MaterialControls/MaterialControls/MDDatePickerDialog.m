@@ -37,7 +37,6 @@
 @property(strong, nonatomic) UIFont *buttonFont UI_APPEARANCE_SELECTOR;
 @property(nonatomic) NSDateFormatter *dateFormatter;
 @property(nonatomic) MDCalendarDateHeader *header;
-@property(nonatomic) MDCalendar *calendar;
 
 @property(nonatomic) MDButton *buttonOk;
 @property(nonatomic) MDButton *buttonCancel;
