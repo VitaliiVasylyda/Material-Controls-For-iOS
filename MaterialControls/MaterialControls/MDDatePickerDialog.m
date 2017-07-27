@@ -247,7 +247,11 @@
   if (_delegate &&
       [_delegate
           respondsToSelector:@selector(datePickerDialogDidSelectDate:)]) {
-    [_delegate datePickerDialogDidSelectDate:_calendar.selectedDate];
+          if (self.calendar.selectedDate != nil) {
+             [_delegate datePickerDialogDidSelectDate:_calendar.selectedDate];
+          } else {
+               [_delegate datePickerDialogDidSelectDate:[NSDate date]];
+          }
   }
   self.hidden = YES;
 }
