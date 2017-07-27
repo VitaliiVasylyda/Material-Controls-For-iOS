@@ -40,6 +40,8 @@
 @property (nullable, strong, nonatomic) NSDate *maximumDate;
 @property(nullable, weak, nonatomic) id<MDDatePickerDialogDelegate> delegate;
 @property(nullable, nonatomic) MDCalendar *calendar;
+@property(nullable, nonatomic) MDButton *buttonOk;
+@property(nullable, nonatomic) MDButton *buttonCancel;
 
 - (void)show;
 - (void)setTitleOk: (nonnull NSString *) okTitle andTitleCancel: (nonnull NSString *) cancelTitle;

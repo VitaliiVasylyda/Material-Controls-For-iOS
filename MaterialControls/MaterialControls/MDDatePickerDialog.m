@@ -38,9 +38,6 @@
 @property(nonatomic) NSDateFormatter *dateFormatter;
 @property(nonatomic) MDCalendarDateHeader *header;
 
-@property(nonatomic) MDButton *buttonOk;
-@property(nonatomic) MDButton *buttonCancel;
-
 @property(nonatomic) NSString *okTitle;
 @property (nonatomic) NSString *cancelTitle;
 @end
